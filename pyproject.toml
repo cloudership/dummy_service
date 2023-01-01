@@ -4,7 +4,7 @@ version = "0.1.0"
 description = ""
 authors = ["Asfand Qazi <asfand@cloudership.com>"]
 readme = "README.md"
-packages = [{ include = "dummy_service"}]
+packages = []
 
 [tool.poetry.dependencies]
 python = "^3.11"
