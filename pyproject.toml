@@ -1,0 +1,16 @@
+[tool.poetry]
+name = "dummy-service"
+version = "0.1.0"
+description = ""
+authors = ["Asfand Qazi <asfand@cloudership.com>"]
+readme = "README.md"
+packages = [{ include = "dummy_service"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+connexion = {version = "2.14.1", extras = ["swagger-ui"]}
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
