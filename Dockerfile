@@ -19,4 +19,4 @@ RUN poetry install
 
 COPY . /app/
 
-CMD poetry run python dummy.py
+CMD APP_PORT=3000 poetry run python dummy.py
