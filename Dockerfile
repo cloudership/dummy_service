@@ -12,9 +12,11 @@ RUN poetryvenv=/usr/lib/poetry/venv && \
     ln -s "${poetryvenv}/bin/poetry" "/usr/bin/poetry" \
     )
 
-COPY . /app
-WORKDIR /app
+WORKDIR /app/
 
+COPY pyproject.toml poetry.lock /app/
 RUN poetry install
+
+COPY . /app/
 
 CMD poetry run python dummy.py
